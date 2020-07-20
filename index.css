@@ -1,0 +1,70 @@
+h1 {
+	color: black;
+	font-family: ballinger-mono, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	float: none;
+	position: absolute;
+	padding: 50px;
+}
+
+.navbar {
+	position: relative;
+	/*overflow: hidden;*/
+
+
+	width: screen-width;
+	background-color: white;
+	border: 5px solid lavender;
+	color: black;
+	display: inline-block;
+	font-family: ballinger-mono, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	/*position: sticky;*/
+	float: right;
+}
+
+/*li {
+	display: inline-block;
+}*/
+
+.link.one, .link.two, .link.three {
+	background-color: white;
+	text-align: left;
+	float: right;
+}
+
+.navbar a {
+	float: left;
+	color: pink;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	background-color: black;
+	color: white;
+}
+
+body {
+	background-color: grey;
+	font-family: ballinger-mono, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.article {
+	background-color: white;
+	width: 80%;
+	height: 1500px;
+}
+
+.subheader {
+	padding: 25px;
+}
+
+.content {
+	padding: 25px;
+}
