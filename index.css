@@ -1,45 +1,37 @@
+.main{
+	display: grid;
+	grid-template:
+		"a a c"
+		"b b b"
+		"b b b"
+		"d d d";
+}
 h1 {
 	color: black;
 	font-family: ballinger-mono, sans-serif;
 	font-weight: 800;
 	font-style: normal;
-	float: none;
-	position: absolute;
-	padding: 50px;
+	padding: 5px;
+	grid-area: a;
 }
 
 .navbar {
-	position: relative;
-	/*overflow: hidden;*/
-
-
-	width: screen-width;
 	background-color: white;
-	border: 5px solid lavender;
+	border: 2px solid lavender;
 	color: black;
-	display: inline-block;
 	font-family: ballinger-mono, sans-serif;
-	font-weight: 300;
+	font-weight: 300px;
 	font-style: normal;
-	/*position: sticky;*/
-	float: right;
-}
-
-/*li {
-	display: inline-block;
-}*/
-
-.link.one, .link.two, .link.three {
-	background-color: white;
-	text-align: left;
-	float: right;
+	font-size: 13px;
+	height: 4em;
+	width: 5em;
+	position: absolute;
+	grid-area: c;
 }
 
 .navbar a {
-	float: left;
 	color: pink;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
 }
 
@@ -53,12 +45,13 @@ body {
 	font-family: ballinger-mono, sans-serif;
 	font-weight: 300;
 	font-style: normal;
+	padding: 0;
 }
 
 .article {
 	background-color: white;
-	width: 80%;
-	height: 1500px;
+	grid-area: b;
+	height: ;
 }
 
 .subheader {
@@ -67,4 +60,8 @@ body {
 
 .content {
 	padding: 25px;
+}
+
+footer{
+	grid-area: d;
 }
