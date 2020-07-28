@@ -1,15 +1,30 @@
+/* Color Theme Swatches in Hex */
+/* .Early-90s-Girl-Colors-1-hex { color: #329962; }
+.Early-90s-Girl-Colors-2-hex { color: #80CCA3; }
+.Early-90s-Girl-Colors-3-hex { color: #C1FFB9; }
+.Early-90s-Girl-Colors-4-hex { color: #EF56FF; }
+.Early-90s-Girl-Colors-5-hex { color: #B080CC; } */
+
+/* Color Theme Swatches in RGBA */
+/* .Early-90s-Girl-Colors-1-rgba { color: rgba(49, 153, 98, 1); }
+.Early-90s-Girl-Colors-2-rgba { color: rgba(127, 204, 163, 1); }
+.Early-90s-Girl-Colors-3-rgba { color: rgba(193, 255, 184, 1); }
+.Early-90s-Girl-Colors-4-rgba { color: rgba(239, 85, 255, 1); }
+.Early-90s-Girl-Colors-5-rgba { color: rgba(175, 127, 204, 1); } */
+
 .main{
 	height: 40em;
 	padding: 0;
 	display: grid;
 	grid-template:
-		"a a a c"
+		"a c c c"
 		"b b b b"
 		"b b b b"
 		"d d d d";
 }
 h1 {
-	color: black;
+	color: rgba(193, 255, 184, 1);
+	background-color: rgba(127, 204, 163, 1);
 	font-family: ballinger-mono, sans-serif;
 	font-weight: 800;
 	font-style: normal;
@@ -19,34 +34,36 @@ h1 {
 
 .navbar {
 	background-color: white;
-	border: 2px solid lavender;
+	border: 2px solid rgba(239, 85, 255, 1);
 	padding: 0;
-	margin: 0;
 	color: black;
 	font-family: ballinger-mono, sans-serif;
 	font-weight: 300px;
-	font-style: normal;
 	font-size: 13px;
 	height: 4em;
-	width: 10em;
+	width: 5em;
 	grid-area: c;
+	display: flex;
+	flex-direction: column;
+	columns: 1;
 }
 
 .navbar a {
-	color: pink;
+	color: rgba(175, 127, 204, 1);
 	display: inline-block;
 	text-decoration: none;
 	width: auto;
 }
 
 .navbar a:hover {
-	background-color: black;
-	color: white;
+	background-color: rgba(193, 255, 184, 1);
+	color: rgba(49, 153, 98, 1);
 	width: auto;
 }
 
 body {
-	background-color: grey;
+	background-color: white;
+	color: rgba(49, 153, 98, 1);
 	font-family: ballinger-mono, sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -55,6 +72,7 @@ body {
 
 .article {
 	background-color: white;
+	border: 2px solid rgba(127, 204, 163, 1);
 	grid-area: b;
 	height: auto;
 }
