@@ -15,13 +15,8 @@
 .main{
 	height: 40em;
 	padding: 0;
-	display: grid;
-	grid-template:
-		"a a a e "
-		"b b b b"
-		"c c c c"
-		"d d d d";
 }
+
 h1 {
 	color: rgba(193, 255, 184, 1);
 	background-color: rgba(127, 204, 163, 1);
@@ -71,22 +66,39 @@ body {
 	font-weight: 300;
 	font-style: normal;
 	padding: 0;
+	display: grid;
+	grid-template:
+		"a a a e "
+		"b b b b"
+		"c c c c"
+		"d d d d";
 }
 
 .welcome {
 	grid-area: b;
+	height: 100vh;
+	margin-top: 0;
+	background-color: rgba(49, 153, 98, 1);
 }
 
 .article {
 	background-color: white;
 	border: 2px solid rgba(127, 204, 163, 1);
 	grid-area: c;
-	height: auto;
+	height: 100vh;
+	padding: none;
+	margin: 0 auto;
+	display: grid;
+	grid-template:
+		"x x x x"
+		"y y y y"
+		"y y y y";
 }
 .projects {
-	width: auto;
-	padding: 1em;
 	margin: 0 auto;
+	grid-area: y;
+	width: 100%;
+	align-items: center;
 }
 
 .container1, .container2, .container3, .container4 {
@@ -104,6 +116,7 @@ body {
 .content {
 	padding: 25px;
 	margin: 0 auto;
+	grid-area: x;
 }
 
 .footer{
