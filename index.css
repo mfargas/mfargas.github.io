@@ -12,20 +12,7 @@
 .Early-90s-Girl-Colors-4-rgba { color: rgba(239, 85, 255, 1); }
 .Early-90s-Girl-Colors-5-rgba { color: rgba(175, 127, 204, 1); } */
 
-.main{
-	height: 40em;
-	padding: 0;
-}
 
-h1 {
-	color: rgba(193, 255, 184, 1);
-	background-color: rgba(127, 204, 163, 1);
-	font-family: ballinger-mono, sans-serif;
-	font-weight: 800;
-	font-style: normal;
-	padding: 5px;
-	grid-area: a;
-}
 
 .navbar {
 	background-color: none;
@@ -65,7 +52,7 @@ body {
 	font-family: ballinger-mono, sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	padding: 0;
+	height: 100vh;
 	display: grid;
 	grid-template:
 		"a a a e "
@@ -74,11 +61,23 @@ body {
 		"d d d d";
 }
 
-.welcome {
+#welcome-section {
 	grid-area: b;
-	height: 100vh;
+	height: 100%;
 	margin-top: 0;
 	background-color: rgba(49, 153, 98, 1);
+	color: white;
+}
+
+h1 {
+	color: rgba(193, 255, 184, 1);
+	background-color: rgba(127, 204, 163, 1);
+	font-family: ballinger-mono, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	padding: 5px;
+	margin: 0;
+	grid-area: a;
 }
 
 .article {
