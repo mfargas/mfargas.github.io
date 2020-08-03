@@ -69,9 +69,14 @@ body {
 	grid-area: b;
 	height: 100vh;
 	margin: 0px;
-	padding: 0px;
-	background-color: rgba(49, 153, 98, 1);
+	padding: 10px;
+	/* background-color: rgba(49, 153, 98, 1); */
+	background-image: url(http://www.gettyimages.com/detail/941526652);
 	color: white;
+}
+
+.welcome-header{
+	margin: 30vh auto;
 }
 
 .logo {
@@ -87,43 +92,59 @@ body {
 	background-color: white;
 	border: 2px solid rgba(127, 204, 163, 1);
 	grid-area: c;
-	height: 100vh;
+	height: 200vh;
 	padding: none;
 	margin: 0 auto;
 	display: grid;
 	grid-template:
 		"x x x x"
-		"y y y y"
 		"y y y y";
 }
 .projects {
 	margin: 0 auto;
-	grid-area: y;
 	width: 100%;
-	align-items: center;
+	display: inline-block;
 }
 
-.container1, .container2, .container3, .container4 {
+.content {
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.container1, .container4 {
 	background-color: rgba(49, 153, 98, 1);
-	width: 15em;
-	height: 15em;
+	width: 16em;
+	height: 16em;
 	margin: 1em;
 	display: inline-block;
+}
+
+.dandelion {
+	width: 100%;
+	height: 100%;
+}
+
+.bluerain {
+	width: 100%;
+	height: 100%;
 }
 
 .subheader {
 	padding: 15px;
 }
 
-.content {
-	padding: 25px;
-	margin: 0 auto;
-	grid-area: x;
+
+.about {
+	grid-area: y;
 }
 
-.dandelion {
-	width: 100%;
-	height: 100%;
+.personal-image{
+	width: 20vw;
+	height: auto;
+}
+
+abbr {
+	text-decoration: underline;
 }
 
 .footer{
