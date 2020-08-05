@@ -79,6 +79,18 @@ html, body {
 	margin: 30vh auto;
 }
 
+.square-one{
+	width: 60vw;
+	height: 30vh;
+	background-color: black;
+}
+
+.square-two{
+	width: 60vw;
+	height: 30vh;
+	background-color: grey;
+}
+
 .logo {
 	color: rgba(193, 255, 184, 1);
 	background-color: rgba(127, 204, 163, 1);
