@@ -11,7 +11,7 @@ function App(props) {
         <Header isMenuOpen={isMenuOpen} />
         
       </header>
-      <h1> hello world</h1>
+      <h1> hello world </h1>
     </div>
   );
   }
