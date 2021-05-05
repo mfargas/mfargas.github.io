@@ -15,7 +15,9 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
     
     - name: Install Node.js
       uses: actions/setup-node@v1
@@ -54,8 +56,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.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 }}
-<<<<<<< HEAD
         publish_dir: ./build
-=======
-        publish_dir: ./build
->>>>>>> 06f3eb7869b3c38c4d812698a147243e0ee41ccb
